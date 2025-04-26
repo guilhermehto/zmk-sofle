@@ -62,7 +62,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:keyboard-esc$$
   - layer1
   - $$mdi:backspace-reverse-outline$$
   layer1:
