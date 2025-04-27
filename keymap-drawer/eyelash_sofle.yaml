@@ -255,7 +255,7 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:mouse-left-click-outline$$
-  - $$mdi:apple-keyboard-command$$
+  - RIGHT GUI
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-esc$$
   - LAYER1
