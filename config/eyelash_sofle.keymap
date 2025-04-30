@@ -35,6 +35,32 @@
         tap-ms = <100>;
     };
 
+    hrml: hrml {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HRML";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick-tap-ms = <100>;
+        flavor = "balanced";
+        hold-trigger-on-release;
+        hold-trigger-key-positions = <46 47 48 49 50 51 59 60 61 62 63 7 8 9 10 11 12 20 21 22 23 24 25 33 34 35 36 37 38 46 47 48 49>;
+    };
+
+    hmrr: hmrr {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HMRR";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick-tap-ms = <100>;
+        flavor = "balanced";
+        hold-trigger-on-release;
+        hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 26 27 28 29 30 31 39 40 41 42 43 44 53 54 55 56 57>;
+    };
+
     behaviors {
     };
 
@@ -64,7 +90,7 @@
             >;
 
             display-name = "LAYER1";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         layer_2 {
@@ -83,18 +109,18 @@
         layer_3 {
             display-name = "LAYER3";
             bindings = <
-&kp EQUAL       &kp N1     &kp N2     &kp N3         &kp N4     &kp N5          &mmv MOVE_UP     &kp N6         &kp N7     &kp N8      &kp N9   &kp N0      &kp MINUS
-&kp TAB         &kp Q      &kp W      &kp E          &kp R      &kp T           &mmv MOVE_DOWN   &kp Y          &kp U      &kp I       &kp O    &kp P       &kp BSLH
-&kp LEFT_SHIFT  &kp A      &kp S      &kp D          &kp F      &kp G           &mmv MOVE_LEFT   &kp H          &kp J      &kp K       &kp L    &kp SEMI    &kp APOS
-&mo 4           &kp Z      &kp X      &kp C          &kp V      &kp B           &mmv MOVE_RIGHT  &kp N          &kp M      &kp COMMA   &kp DOT  &kp FSLH    &to 0
-&kp C_MUTE      &kp LCTRL  &kp LCTRL  &kp BACKSPACE  &kp SPACE  &kp LEFT_ALT    &mkp LCLK        &kp RIGHT_GUI  &kp ENTER  &kp ESCAPE  &mo 1    &kp DELETE
+&kp EQUAL       &kp N1         &kp N2            &kp N3            &kp N4              &kp N5          &mmv MOVE_UP     &kp N6         &kp N7              &kp N8            &kp N9            &kp N0                 &kp MINUS
+&kp TAB         &kp Q          &kp W             &kp E             &kp R               &kp T           &mmv MOVE_DOWN   &kp Y          &kp U               &kp I             &kp O             &kp P                  &kp BSLH
+&kp LEFT_SHIFT  &hrml LCTRL A  &hrml LEFT_ALT S  &hrml LEFT_GUI D  &hrml LEFT_SHIFT F  &kp G           &mmv MOVE_LEFT   &kp H          &hmrr LEFT_SHIFT J  &hmrr LEFT_GUI K  &hmrr LEFT_ALT L  &hmrr LCTRL SEMICOLON  &kp APOS
+&mo 4           &kp Z          &kp X             &kp C             &kp V               &kp B           &mmv MOVE_RIGHT  &kp N          &kp M               &kp COMMA         &kp DOT           &kp FSLH               &to 0
+&kp C_MUTE      &kp LCTRL      &kp LCTRL         &kp BACKSPACE     &kp SPACE           &kp LEFT_ALT    &mkp LCLK        &kp RIGHT_GUI  &kp ENTER           &kp ESCAPE        &mo 1             &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         layer_4 {
-            display-name = "LAYER1";
+            display-name = "LAYER4";
             bindings = <
 &kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5       &msc SCRL_UP     &rgb_ug RGB_SPI  &kp F7                &kp F8                 &kp F9     &kp F10           &kp F11
 &trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4     &msc SCRL_DOWN   &rgb_ug RGB_SPD  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HOME   &kp MINUS         &kp F12
