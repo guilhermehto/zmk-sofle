@@ -325,3 +325,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [0, 5]
+  k: {t: '$$mdi:backup-restore$$', type: bootloader}
+- p: [12, 7]
+  k: {t: '$$mdi:backup-restore$$', type: bootloader}
