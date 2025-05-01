@@ -64,6 +64,20 @@
     behaviors {
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        reset-left {
+            bindings = <&sys_reset>;
+            key-positions = <0 5>;
+        };
+
+        reset-right {
+            bindings = <&sys_reset>;
+            key-positions = <12 7>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
