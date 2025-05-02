@@ -60,7 +60,7 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:mouse-left-click-outline$$
-  - LAYER2
+  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-esc$$
   - LAYER1
@@ -190,7 +190,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -330,3 +330,11 @@ combos:
   k: {t: '$$mdi:backup-restore$$', type: bootloader}
 - p: [12, 7]
   k: {t: '$$mdi:backup-restore$$', type: bootloader}
+- p: [59, 33]
+  k: $$mdi:arrow-left-bold$$
+- p: [59, 34]
+  k: $$mdi:arrow-down-bold$$
+- p: [59, 35]
+  k: $$mdi:arrow-up-bold$$
+- p: [59, 36]
+  k: $$mdi:arrow-right-bold$$
