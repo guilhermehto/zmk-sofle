@@ -118,7 +118,7 @@
 &trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4     &msc SCRL_DOWN   &rgb_ug RGB_SPD  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HOME   &kp MINUS         &kp F12
 &trans      &kp TILDE        &trans          &trans           &trans           &kp GRAVE    &msc SCRL_LEFT   &rgb_ug RGB_BRI  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &kp TILDE    &msc SCRL_RIGHT  &rgb_ug RGB_BRD  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans       &mkp LCLK        &trans           &trans                &trans                 &trans     &trans
+&kp C_MUTE  &trans           &trans          &trans           &trans           &trans       &mkp LCLK        &kp DELETE       &trans                &trans                 &trans     &trans
             >;
 
             display-name = "LAYER1";
@@ -158,7 +158,7 @@
 &trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4     &msc SCRL_DOWN   &rgb_ug RGB_SPD  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HOME   &kp MINUS         &kp F12
 &trans      &kp TILDE        &trans          &trans           &trans           &kp GRAVE    &msc SCRL_LEFT   &rgb_ug RGB_BRI  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &kp TILDE    &msc SCRL_RIGHT  &rgb_ug RGB_BRD  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans       &mkp LCLK        &trans           &trans                &trans                 &trans     &trans
+&kp C_MUTE  &trans           &trans          &trans           &trans           &trans       &mkp LCLK        &kp DELETE       &trans                &trans                 &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
