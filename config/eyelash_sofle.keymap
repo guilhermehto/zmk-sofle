@@ -41,11 +41,11 @@
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <150>;
+        tapping-term-ms = <200>;
         flavor = "balanced";
         hold-trigger-on-release;
         hold-trigger-key-positions = <46 47 48 49 50 51 59 60 61 62 63 7 8 9 10 11 12 20 21 22 23 24 25 33 34 35 36 37 38 46 47 48 49>;
-        require-prior-idle-ms = <100>;
+        require-prior-idle-ms = <125>;
     };
 
     hmrr: hmrr {
@@ -54,11 +54,11 @@
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <150>;
+        tapping-term-ms = <200>;
         flavor = "balanced";
         hold-trigger-on-release;
         hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 26 27 28 29 30 31 39 40 41 42 43 44 53 54 55 56 57>;
-        require-prior-idle-ms = <100>;
+        require-prior-idle-ms = <125>;
     };
 
     behaviors {
@@ -96,6 +96,16 @@
             bindings = <&kp RIGHT_ARROW>;
             key-positions = <59 36>;
         };
+
+        to-mac {
+            bindings = <&to 3>;
+            key-positions = <59 51>;
+        };
+
+        to-win {
+            bindings = <&to 0>;
+            key-positions = <59 38>;
+        };
     };
 
     keymap {
@@ -106,7 +116,7 @@
 &kp EQUAL       &kp N1         &kp N2            &kp N3            &kp N4              &kp N5          &mmv MOVE_UP     &kp N6     &kp N7              &kp N8            &kp N9            &kp N0                 &kp MINUS
 &kp TAB         &kp Q          &kp W             &kp E             &kp R               &kp T           &mmv MOVE_DOWN   &kp Y      &kp U               &kp I             &kp O             &kp P                  &kp BSLH
 &kp LEFT_SHIFT  &hrml LCTRL A  &hrml LEFT_ALT S  &hrml LEFT_GUI D  &hrml LEFT_SHIFT F  &kp G           &mmv MOVE_LEFT   &kp H      &hmrr LEFT_SHIFT J  &hmrr LEFT_GUI K  &hmrr LEFT_ALT L  &hmrr LCTRL SEMICOLON  &kp APOS
-&mo 1           &kp Z          &kp X             &kp C             &kp V               &kp B           &mmv MOVE_RIGHT  &kp N      &kp M               &kp COMMA         &kp DOT           &kp FSLH               &to 3
+&mo 1           &kp Z          &kp X             &kp C             &kp V               &kp B           &mmv MOVE_RIGHT  &kp N      &kp M               &kp COMMA         &kp DOT           &kp FSLH               &none
 &kp C_MUTE      &kp LCTRL      &kp LCTRL         &kp BACKSPACE     &kp SPACE           &kp LEFT_GUI    &mkp LCLK        &kp LCTRL  &kp ENTER           &kp ESCAPE        &mo 1             &kp DELETE
             >;
 
@@ -146,7 +156,7 @@
 &kp EQUAL       &kp N1         &kp N2            &kp N3            &kp N4              &kp N5          &mmv MOVE_UP     &kp N6         &kp N7              &kp N8            &kp N9            &kp N0                 &kp MINUS
 &kp TAB         &kp Q          &kp W             &kp E             &kp R               &kp T           &mmv MOVE_DOWN   &kp Y          &kp U               &kp I             &kp O             &kp P                  &kp BSLH
 &kp LEFT_SHIFT  &hrml LCTRL A  &hrml LEFT_ALT S  &hrml LEFT_GUI D  &hrml LEFT_SHIFT F  &kp G           &mmv MOVE_LEFT   &kp H          &hmrr LEFT_SHIFT J  &hmrr LEFT_GUI K  &hmrr LEFT_ALT L  &hmrr LCTRL SEMICOLON  &kp APOS
-&mo 4           &kp Z          &kp X             &kp C             &kp V               &kp B           &mmv MOVE_RIGHT  &kp N          &kp M               &kp COMMA         &kp DOT           &kp FSLH               &to 0
+&mo 4           &kp Z          &kp X             &kp C             &kp V               &kp B           &mmv MOVE_RIGHT  &kp N          &kp M               &kp COMMA         &kp DOT           &kp FSLH               &none
 &kp C_MUTE      &kp LCTRL      &kp LCTRL         &kp BACKSPACE     &kp SPACE           &kp LEFT_ALT    &mkp LCLK        &kp RIGHT_GUI  &kp ENTER           &kp ESCAPE        &mo 1             &kp DELETE
             >;
 
