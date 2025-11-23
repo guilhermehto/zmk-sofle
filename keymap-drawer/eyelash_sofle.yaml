@@ -52,7 +52,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: LAYER3, h: toggle}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-control$$
@@ -247,7 +247,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: LAYER0, h: toggle}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-control$$
@@ -338,3 +338,7 @@ combos:
   k: $$mdi:arrow-up-bold$$
 - p: [59, 36]
   k: $$mdi:arrow-right-bold$$
+- p: [59, 51]
+  k: {t: LAYER3, h: toggle}
+- p: [59, 38]
+  k: {t: LAYER0, h: toggle}
