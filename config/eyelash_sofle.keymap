@@ -184,11 +184,11 @@
         win_game {
             display-name = "LAYER0";
             bindings = <
-&kp EQUAL       &kp N1         &kp N2            &kp N3            &kp N4              &kp N5          &mmv MOVE_UP     &kp N6     &kp N7              &kp N8            &kp N9            &kp N0                 &kp MINUS
-&kp TAB         &kp Q          &kp W             &kp E             &kp R               &kp T           &mmv MOVE_DOWN   &kp Y      &kp U               &kp I             &kp O             &kp P                  &kp BSLH
-&kp LEFT_SHIFT  &hrml LCTRL A  &hrml LEFT_ALT S  &hrml LEFT_GUI D  &hrml LEFT_SHIFT F  &kp G           &mmv MOVE_LEFT   &kp H      &hmrr LEFT_SHIFT J  &hmrr LEFT_GUI K  &hmrr LEFT_ALT L  &hmrr LCTRL SEMICOLON  &kp APOS
-&kp LCTRL       &kp Z          &kp X             &kp C             &kp V               &kp B           &mmv MOVE_RIGHT  &kp N      &kp M               &kp COMMA         &kp DOT           &kp FSLH               &none
-&kp C_MUTE      &mo 1          &kp LEFT_ALT      &kp BACKSPACE     &kp SPACE           &kp LEFT_GUI    &mkp LCLK        &kp LCTRL  &kp ENTER           &kp ESCAPE        &mo 1             &kp DELETE
+&kp EQUAL       &kp N1  &kp N2        &kp N3         &kp N4     &kp N5          &mmv MOVE_UP     &kp N6     &kp N7              &kp N8            &kp N9            &kp N0                 &kp MINUS
+&kp TAB         &kp Q   &kp W         &kp E          &kp R      &kp T           &mmv MOVE_DOWN   &kp Y      &kp U               &kp I             &kp O             &kp P                  &kp BSLH
+&kp LEFT_SHIFT  &kp A   &kp S         &kp D          &kp F      &kp G           &mmv MOVE_LEFT   &kp H      &hmrr LEFT_SHIFT J  &hmrr LEFT_GUI K  &hmrr LEFT_ALT L  &hmrr LCTRL SEMICOLON  &kp APOS
+&kp LCTRL       &kp Z   &kp X         &kp C          &kp V      &kp B           &mmv MOVE_RIGHT  &kp N      &kp M               &kp COMMA         &kp DOT           &kp FSLH               &none
+&kp C_MUTE      &mo 1   &kp LEFT_ALT  &kp BACKSPACE  &kp SPACE  &kp LEFT_GUI    &mkp LCLK        &kp LCTRL  &kp ENTER           &kp ESCAPE        &mo 1             &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
