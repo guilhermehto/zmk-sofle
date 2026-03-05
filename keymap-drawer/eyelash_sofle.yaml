@@ -344,3 +344,11 @@ combos:
   k: {t: LAYER0, h: toggle}
 - p: [59, 25]
   k: {t: LAYER0, h: toggle}
+- p: [39, 0]
+  k: {h: '1', s: '$$mdi:bluetooth-connect$$'}
+- p: [1, 39]
+  k: {h: '2', s: '$$mdi:bluetooth-connect$$'}
+- p: [39, 2]
+  k: {h: '3', s: '$$mdi:bluetooth-connect$$'}
+- p: [39, 13]
+  k: $$mdi:bluetooth-off$$
