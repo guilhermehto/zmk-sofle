@@ -111,6 +111,26 @@
             bindings = <&to 5>;
             key-positions = <59 25>;
         };
+
+        bluetooth_0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <39 0>;
+        };
+
+        bluetooth_1 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <1 39>;
+        };
+
+        bluetooth_2 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <39 2>;
+        };
+
+        bluetooth_clear {
+            bindings = <&bt BT_CLR>;
+            key-positions = <39 13>;
+        };
     };
 
     keymap {
